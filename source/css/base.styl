@@ -21,6 +21,28 @@ h1, h2, h3, h4, h5, h6
   font-size 25px
   line-height 1.5
 
+.post-preview h2:before
+  position: absolute;
+  left -1px;
+  display block;
+  content '';
+  color #f72d84;
+
+h2:before, h3:before, h4:before, h5:before, h6:before
+  position: absolute;
+  left -1rem;
+  display block;
+  content '# ';
+  color #f72d84;
+  margin-left -5px;
+h3:before
+  content '##';
+h4:before
+  content '### ';
+h5:before
+  content '#### ';
+h6:before
+  content '##### ';
 a
   color gray-dark
   &:hover, &:focus
